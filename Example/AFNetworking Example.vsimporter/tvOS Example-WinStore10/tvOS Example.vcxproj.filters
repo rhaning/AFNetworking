@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{71e7600a-f37f-4ee4-9ab4-e6dbf1b73d8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{849af934-7f06-45ea-9d60-38289e8a4fe8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Xcode Variable Files">
+      <UniqueIdentifier>{0C092D3F-4A1F-4340-82C2-600CA0000DC2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tvOS Example">
+      <UniqueIdentifier>{14B597B8-2C24-4E00-807D-B1480240B004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tvOS Example\Base">
+      <UniqueIdentifier>{A1E06EFD-E345-451C-B07B-A3ACB3A7A995}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Text Include="..\..\tvOS Example\ViewController.swift">
+      <Filter>tvOS Example</Filter>
+    </Text>
+    <Text Include="..\..\tvOS Example\AppDelegate.swift">
+      <Filter>tvOS Example</Filter>
+    </Text>
+    <Text Include="..\..\tvOS Example\Gravatar.swift">
+      <Filter>tvOS Example</Filter>
+    </Text>
+    <AssetCatalogCompile Include="..\..\tvOS Example\Assets.xcassets">
+      <Filter>tvOS Example</Filter>
+    </AssetCatalogCompile>
+    <StoryboardCompile Include="..\..\tvOS Example\Base.lproj\Main.storyboard">
+      <Filter>tvOS Example\Base</Filter>
+    </StoryboardCompile>
+    <SBInfoPlistCopy Include="..\..\tvOS Example\Info.plist" />
+    <Text Include="tvOS Example-Debug-xcvars.txt">
+      <Filter>Xcode Variable Files</Filter>
+    </Text>
+    <Text Include="tvOS Example-Release-xcvars.txt">
+      <Filter>Xcode Variable Files</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

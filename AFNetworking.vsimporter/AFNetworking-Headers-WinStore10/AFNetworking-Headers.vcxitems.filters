@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="AFNetworking">
+      <UniqueIdentifier>{7E2B709B-B49D-45E5-A6A8-8AF2FAD1151E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Supporting Files">
+      <UniqueIdentifier>{ED15A2A5-6865-4E0F-9841-9047EDA16C83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{1F70DAF6-AEF7-4058-96C6-8FF0D8FBB273}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Tests">
+      <UniqueIdentifier>{F331642A-3584-4A96-A899-ABDEEC37CD35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIKit+AFNetworking">
+      <UniqueIdentifier>{04E921BD-3A71-4C11-9D6E-7C439164D65F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\AFNetworking\AFHTTPSessionManager.h">
+      <Filter>AFNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\AFNetworking\AFNetworkReachabilityManager.h">
+      <Filter>AFNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\AFNetworking\AFSecurityPolicy.h">
+      <Filter>AFNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\AFNetworking\AFURLRequestSerialization.h">
+      <Filter>AFNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\AFNetworking\AFURLResponseSerialization.h">
+      <Filter>AFNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\AFNetworking\AFURLSessionManager.h">
+      <Filter>AFNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\UIKit+AFNetworking\AFAutoPurgingImageCache.h">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\UIKit+AFNetworking\AFImageDownloader.h">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\UIKit+AFNetworking\AFNetworkActivityIndicatorManager.h">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\UIKit+AFNetworking\UIActivityIndicatorView+AFNetworking.h">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\UIKit+AFNetworking\UIButton+AFNetworking.h">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\UIKit+AFNetworking\UIImage+AFNetworking.h">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\UIKit+AFNetworking\UIImageView+AFNetworking.h">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\UIKit+AFNetworking\UIKit+AFNetworking.h">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\UIKit+AFNetworking\UIProgressView+AFNetworking.h">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\UIKit+AFNetworking\UIRefreshControl+AFNetworking.h">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\UIKit+AFNetworking\UIWebView+AFNetworking.h">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Framework\AFNetworking.h">
+      <Filter>Supporting Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Tests\Tests\AFTestCase.h">
+      <Filter>Tests\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)AssertMacros.h">
+      <Filter>AFNetworking</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

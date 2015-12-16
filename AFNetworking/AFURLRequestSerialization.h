@@ -129,7 +129,9 @@ typedef NS_ENUM(NSUInteger, AFHTTPRequestQueryStringSerializationStyle) {
 
  @discussion To add or remove default request headers, use `setValue:forHTTPHeaderField:`.
  */
-@property (readonly, nonatomic, strong) NSDictionary <NSString *, NSString *> *HTTPRequestHeaders;
+// IW_COMPAT
+//@property (readonly, nonatomic, strong) NSDictionary <NSString *, NSString *> *HTTPRequestHeaders;
+@property (readonly, nonatomic, strong) NSDictionary *HTTPRequestHeaders;
 
 /**
  Creates and returns a serializer with default configuration.
@@ -175,7 +177,9 @@ forHTTPHeaderField:(NSString *)field;
 /**
  HTTP methods for which serialized requests will encode parameters as a query string. `GET`, `HEAD`, and `DELETE` by default.
  */
-@property (nonatomic, strong) NSSet <NSString *> *HTTPMethodsEncodingParametersInURI;
+// IW_COMPAT
+//@property (nonatomic, strong) NSSet <NSString *> *HTTPMethodsEncodingParametersInURI;
+@property (nonatomic, strong) NSSet *HTTPMethodsEncodingParametersInURI;
 
 /**
  Set the method of query string serialization according to one of the pre-defined styles.
@@ -227,11 +231,18 @@ forHTTPHeaderField:(NSString *)field;
 
  @return An `NSMutableURLRequest` object
  */
-- (NSMutableURLRequest *)multipartFormRequestWithMethod:(NSString *)method
+
+// IW_COMPAT
+/*- (NSMutableURLRequest *)multipartFormRequestWithMethod:(NSString *)method
                                               URLString:(NSString *)URLString
                                              parameters:(nullable NSDictionary <NSString *, id> *)parameters
                               constructingBodyWithBlock:(nullable void (^)(id <AFMultipartFormData> formData))block
-                                                  error:(NSError * _Nullable __autoreleasing *)error;
+                                                  error:(NSError * _Nullable __autoreleasing *)error; */
+-(NSMutableURLRequest *)multipartFormRequestWithMethod:(NSString *)method
+URLString : (NSString *)URLString
+	parameters : (nullable NSDictionary *)parameters
+	constructingBodyWithBlock : (nullable void(^)(id <AFMultipartFormData> formData))block
+	error : (NSError * _Nullable __autoreleasing *)error;
 
 /**
  Creates an `NSMutableURLRequest` by removing the `HTTPBodyStream` from a request, and asynchronously writing its contents into the specified file, invoking the completion handler when finished.
@@ -334,8 +345,11 @@ forHTTPHeaderField:(NSString *)field;
  @param headers The HTTP headers to be appended to the form data.
  @param body The data to be encoded and appended to the form data. This parameter must not be `nil`.
  */
-- (void)appendPartWithHeaders:(nullable NSDictionary <NSString *, NSString *> *)headers
-                         body:(NSData *)body;
+// IW_COMPAT
+//- (void)appendPartWithHeaders:(nullable NSDictionary <NSString *, NSString *> *)headers
+                         //body:(NSData *)body;
+-(void)appendPartWithHeaders:(nullable NSDictionary *)headers
+						body : (NSData *)body;
 
 /**
  Throttles request bandwidth by limiting the packet size and adding a delay for each chunk read from the upload stream.

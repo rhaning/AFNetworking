@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="AFNetworking">
+      <UniqueIdentifier>{59DB8A3D-39BD-45A4-BE9F-B82EA2F956D1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClangCompile Include="..\..\AFNetworking\AFNetworkReachabilityManager.m">
+      <Filter>AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\AFNetworking\AFSecurityPolicy.m">
+      <Filter>AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\AFNetworking\AFHTTPSessionManager.m">
+      <Filter>AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\AFNetworking\AFURLSessionManager.m">
+      <Filter>AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\AFNetworking\AFURLRequestSerialization.m">
+      <Filter>AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\AFNetworking\AFURLResponseSerialization.m">
+      <Filter>AFNetworking</Filter>
+    </ClangCompile>
+  </ItemGroup>
+</Project>

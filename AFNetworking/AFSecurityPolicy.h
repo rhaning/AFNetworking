@@ -19,6 +19,14 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// IW_COMPAT
+#ifndef TARGET_OS_IOS
+#define TARGET_OS_IOS TARGET_OS_IPHONE
+#endif
+#ifndef TARGET_OS_WATCH
+#define TARGET_OS_WATCH 0
+#endif
+
 #import <Foundation/Foundation.h>
 #import <Security/Security.h>
 
@@ -50,7 +58,9 @@ NS_ASSUME_NONNULL_BEGIN
  
  Note that if pinning is enabled, `evaluateServerTrust:forDomain:` will return true if any pinned certificate matches.
  */
-@property (nonatomic, strong, nullable) NSSet <NSData *> *pinnedCertificates;
+// IW_COMPAT
+//@property (nonatomic, strong, nullable) NSSet <NSData *> *pinnedCertificates;
+@property (nonatomic, strong, nullable) NSSet *pinnedCertificates;
 
 /**
  Whether or not to trust servers with an invalid or expired SSL certificates. Defaults to `NO`.
@@ -71,7 +81,9 @@ NS_ASSUME_NONNULL_BEGIN
 
  @return The certificates included in the given bundle.
  */
-+ (NSSet <NSData *> *)certificatesInBundle:(NSBundle *)bundle;
+// IW_COMPAT
+//+ (NSSet <NSData *> *)certificatesInBundle:(NSBundle *)bundle;
++(NSSet *)certificatesInBundle:(NSBundle *)bundle;
 
 ///-----------------------------------------
 /// @name Getting Specific Security Policies
@@ -105,7 +117,9 @@ NS_ASSUME_NONNULL_BEGIN
 
  @return A new security policy.
  */
-+ (instancetype)policyWithPinningMode:(AFSSLPinningMode)pinningMode withPinnedCertificates:(NSSet <NSData *> *)pinnedCertificates;
+// IW_COMPAT
+//+ (instancetype)policyWithPinningMode:(AFSSLPinningMode)pinningMode withPinnedCertificates:(NSSet <NSData *> *)pinnedCertificates;
++(instancetype)policyWithPinningMode:(AFSSLPinningMode)pinningMode withPinnedCertificates : (NSSet *)pinnedCertificates;
 
 ///------------------------------
 /// @name Evaluating Server Trust

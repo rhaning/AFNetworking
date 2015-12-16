@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{adf9950f-1bf6-4ca1-a75e-2bbaef28dac2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{4877ef34-7db9-45b4-a5a1-c1656ef0190b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{C664EC29-7477-4330-90B9-1F39321F9F4C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Models">
+      <UniqueIdentifier>{6CAAAC1E-1162-4729-9B1B-374093C9F1A2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Networking Extensions">
+      <UniqueIdentifier>{50A1CA3D-5B34-494F-BC1B-96CA427C5803}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Xcode Variable Files">
+      <UniqueIdentifier>{A68945AB-43F5-4422-8DB2-51E14C4193FA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iOS Example">
+      <UniqueIdentifier>{882890CA-9D26-4761-9226-90D2DF7237E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iOS Example\Controllers">
+      <UniqueIdentifier>{F1E0639F-6911-4C00-AFB6-D321C9925B1D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iOS Example\Supporting Files">
+      <UniqueIdentifier>{079C2E4C-1C5C-40F6-99AC-36D366D6B427}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iOS Example\Views">
+      <UniqueIdentifier>{032501E9-FAAC-412C-9574-61DA97770496}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <ClangCompile Include="..\..\Classes\Models\Post.m">
+      <Filter>Classes\Models</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\iOS Example\Controllers\GlobalTimelineViewController.m">
+      <Filter>iOS Example\Controllers</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\iOS Example\Views\PostTableViewCell.m">
+      <Filter>iOS Example\Views</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\Classes\Models\User.m">
+      <Filter>Classes\Models</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\main.m">
+      <Filter>iOS Example\Supporting Files</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\Classes\Networking Extensions\AFAppDotNetAPIClient.m">
+      <Filter>Classes\Networking Extensions</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\iOS Example\AppDelegate.m">
+      <Filter>iOS Example</Filter>
+    </ClangCompile>
+    <AssetCatalogCompile Include="..\..\Assets.xcassets" />
+    <StoryboardCompile Include="..\..\iOS Example\Launchscreen.storyboard">
+      <Filter>iOS Example\Supporting Files</Filter>
+    </StoryboardCompile>
+    <SBInfoPlistCopy Include="..\..\iOS Example\Info.plist" />
+    <Text Include="iOS Example-Debug-xcvars.txt">
+      <Filter>Xcode Variable Files</Filter>
+    </Text>
+    <Text Include="iOS Example-Release-xcvars.txt">
+      <Filter>Xcode Variable Files</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

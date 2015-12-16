@@ -19,9 +19,10 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+#import "IWCompat.h"
 #import "AFSecurityPolicy.h"
 
-#import <AssertMacros.h>
+#import "AssertMacros.h"
 
 #if !TARGET_OS_IOS && !TARGET_OS_WATCH && !TARGET_OS_TV
 static NSData * AFSecKeyGetData(SecKeyRef key) {
@@ -58,16 +59,19 @@ static id AFPublicKeyForCertificate(NSData *certificate) {
     SecTrustResultType result;
 
     allowedCertificate = SecCertificateCreateWithData(NULL, (__bridge CFDataRef)certificate);
-    __Require_Quiet(allowedCertificate != NULL, _out);
+    // IW_COMPAT
+	//__Require_Quiet(allowedCertificate != NULL, _out);
 
     allowedCertificates[0] = allowedCertificate;
     tempCertificates = CFArrayCreate(NULL, (const void **)allowedCertificates, 1, NULL);
 
     policy = SecPolicyCreateBasicX509();
-    __Require_noErr_Quiet(SecTrustCreateWithCertificates(tempCertificates, policy, &allowedTrust), _out);
-    __Require_noErr_Quiet(SecTrustEvaluate(allowedTrust, &result), _out);
+	// IW_COMPAT
+    //__Require_noErr_Quiet(SecTrustCreateWithCertificates(tempCertificates, policy, &allowedTrust), _out);
+    //__Require_noErr_Quiet(SecTrustEvaluate(allowedTrust, &result), _out);
 
-    allowedPublicKey = (__bridge_transfer id)SecTrustCopyPublicKey(allowedTrust);
+	// IW_COMPAT 
+    //allowedPublicKey = (__bridge_transfer id)SecTrustCopyPublicKey(allowedTrust);
 
 _out:
     if (allowedTrust) {
@@ -92,7 +96,8 @@ _out:
 static BOOL AFServerTrustIsValid(SecTrustRef serverTrust) {
     BOOL isValid = NO;
     SecTrustResultType result;
-    __Require_noErr_Quiet(SecTrustEvaluate(serverTrust, &result), _out);
+    // IW_COMPAT
+	//__Require_noErr_Quiet(SecTrustEvaluate(serverTrust, &result), _out);
 
     isValid = (result == kSecTrustResultUnspecified || result == kSecTrustResultProceed);
 
@@ -106,7 +111,8 @@ static NSArray * AFCertificateTrustChainForServerTrust(SecTrustRef serverTrust) 
 
     for (CFIndex i = 0; i < certificateCount; i++) {
         SecCertificateRef certificate = SecTrustGetCertificateAtIndex(serverTrust, i);
-        [trustChain addObject:(__bridge_transfer NSData *)SecCertificateCopyData(certificate)];
+		// IW_COMPAT
+        //[trustChain addObject:(__bridge_transfer NSData *)SecCertificateCopyData(certificate)];
     }
 
     return [NSArray arrayWithArray:trustChain];
@@ -123,12 +129,15 @@ static NSArray * AFPublicKeyTrustChainForServerTrust(SecTrustRef serverTrust) {
         CFArrayRef certificates = CFArrayCreate(NULL, (const void **)someCertificates, 1, NULL);
 
         SecTrustRef trust;
-        __Require_noErr_Quiet(SecTrustCreateWithCertificates(certificates, policy, &trust), _out);
+		// IW_COMPAT
+        //__Require_noErr_Quiet(SecTrustCreateWithCertificates(certificates, policy, &trust), _out);
 
         SecTrustResultType result;
-        __Require_noErr_Quiet(SecTrustEvaluate(trust, &result), _out);
+		// IW_COMPAT
+        //__Require_noErr_Quiet(SecTrustEvaluate(trust, &result), _out);
 
-        [trustChain addObject:(__bridge_transfer id)SecTrustCopyPublicKey(trust)];
+		// IW_COMPAT
+        //[trustChain addObject:(__bridge_transfer id)SecTrustCopyPublicKey(trust)];
 
     _out:
         if (trust) {
@@ -244,13 +253,16 @@ static NSArray * AFPublicKeyTrustChainForServerTrust(SecTrustRef serverTrust) {
         NSLog(@"In order to validate a domain name for self signed certificates, you MUST use pinning.");
         return NO;
     }
-
+	
     NSMutableArray *policies = [NSMutableArray array];
+	// IW_COMPAT
+	/*
     if (self.validatesDomainName) {
         [policies addObject:(__bridge_transfer id)SecPolicyCreateSSL(true, (__bridge CFStringRef)domain)];
     } else {
         [policies addObject:(__bridge_transfer id)SecPolicyCreateBasicX509()];
     }
+	*/
 
     SecTrustSetPolicies(serverTrust, (__bridge CFArrayRef)policies);
 
@@ -267,7 +279,8 @@ static NSArray * AFPublicKeyTrustChainForServerTrust(SecTrustRef serverTrust) {
         case AFSSLPinningModeCertificate: {
             NSMutableArray *pinnedCertificates = [NSMutableArray array];
             for (NSData *certificateData in self.pinnedCertificates) {
-                [pinnedCertificates addObject:(__bridge_transfer id)SecCertificateCreateWithData(NULL, (__bridge CFDataRef)certificateData)];
+			// IW_COMPAT
+                // [pinnedCertificates addObject:(__bridge_transfer id)SecCertificateCreateWithData(NULL, (__bridge CFDataRef)certificateData)];
             }
             SecTrustSetAnchorCertificates(serverTrust, (__bridge CFArrayRef)pinnedCertificates);
 

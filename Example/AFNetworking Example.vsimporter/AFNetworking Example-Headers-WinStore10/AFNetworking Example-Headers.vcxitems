@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsRootNamespace>AFNetworking_Example_Headers</ItemsRootNamespace>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <ItemsProjectGuid>{79421C01-0CBA-43A2-81BF-953F9AD96DED}</ItemsProjectGuid>
+    <SharedGUID>{37A80A3A-F14B-4A1C-AC80-D49E578026C5}</SharedGUID>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\Models\Post.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\Models\User.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\Networking Extensions\AFAppDotNetAPIClient.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\iOS Example\AppDelegate.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\iOS Example\Controllers\GlobalTimelineViewController.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\iOS Example\Views\PostTableViewCell.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Today Extension Example\TodayViewController.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\watchOS Example Extension\InterfaceController.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\watchOS Example Extension\ExtensionDelegate.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\OS X Example\AppDelegate.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\tvOS Example\AFNetworking tvOS Example-Bridging-Header.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+</Project>

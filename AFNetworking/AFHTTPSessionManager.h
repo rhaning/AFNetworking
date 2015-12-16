@@ -19,6 +19,14 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// IW_COMPAT
+#ifndef TARGET_OS_IOS
+#define TARGET_OS_IOS TARGET_OS_IPHONE
+#endif
+#ifndef TARGET_OS_WATCH
+#define TARGET_OS_WATCH 0
+#endif
+
 #import <Foundation/Foundation.h>
 #if !TARGET_OS_WATCH
 #import <SystemConfiguration/SystemConfiguration.h>
@@ -26,7 +34,8 @@
 #import <TargetConditionals.h>
 
 #if TARGET_OS_IOS || TARGET_OS_WATCH || TARGET_OS_TV
-#import <MobileCoreServices/MobileCoreServices.h>
+// IW_COMPAT
+//#import <MobileCoreServices/MobileCoreServices.h>
 #else
 #import <CoreServices/CoreServices.h>
 #endif

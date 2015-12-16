@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{162E3394-76E0-4AED-8ECF-96B9B3EF0927}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Models">
+      <UniqueIdentifier>{E6D2AFE8-94C9-4F1F-A04A-CCD11EF98DF6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Networking Extensions">
+      <UniqueIdentifier>{0BAE1A5F-07ED-4FE8-AAE2-9C6AB51F9F52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OS X Example">
+      <UniqueIdentifier>{6E28B2DD-0C3F-4D68-B8C2-341DF77AB45B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Today Extension Example">
+      <UniqueIdentifier>{B4D4BA27-1627-43F1-98E2-A4198C1D5A12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iOS Example">
+      <UniqueIdentifier>{A7370BE2-6F90-45CA-98A9-8C5C83B5337F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iOS Example\Controllers">
+      <UniqueIdentifier>{8FE0524E-9BAE-425E-B753-C5A9497C974D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iOS Example\Views">
+      <UniqueIdentifier>{9367CAD8-F135-4136-B72C-325E2145054F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tvOS Example">
+      <UniqueIdentifier>{C7E95FF3-A8FF-430C-A0A0-92A996254E5E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="watchOS Example Extension">
+      <UniqueIdentifier>{3179B9E5-C792-4184-80F9-CDCC53395932}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\Models\Post.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\Models\User.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\Networking Extensions\AFAppDotNetAPIClient.h">
+      <Filter>Classes\Networking Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\iOS Example\AppDelegate.h">
+      <Filter>iOS Example</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\iOS Example\Controllers\GlobalTimelineViewController.h">
+      <Filter>iOS Example\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\iOS Example\Views\PostTableViewCell.h">
+      <Filter>iOS Example\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Today Extension Example\TodayViewController.h">
+      <Filter>Today Extension Example</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\watchOS Example Extension\InterfaceController.h">
+      <Filter>watchOS Example Extension</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\watchOS Example Extension\ExtensionDelegate.h">
+      <Filter>watchOS Example Extension</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\OS X Example\AppDelegate.h">
+      <Filter>OS X Example</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\tvOS Example\AFNetworking tvOS Example-Bridging-Header.h">
+      <Filter>tvOS Example</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

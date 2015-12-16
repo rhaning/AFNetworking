@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="AFNetworking">
+      <UniqueIdentifier>{2ED0B1B1-CF99-40A3-88F4-DD3826BBBC12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIKit+AFNetworking">
+      <UniqueIdentifier>{79716B3E-81D4-4600-829D-079966DCB9AC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClangCompile Include="..\..\UIKit+AFNetworking\UIProgressView+AFNetworking.m">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\AFNetworking\AFNetworkReachabilityManager.m">
+      <Filter>AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\UIKit+AFNetworking\UIRefreshControl+AFNetworking.m">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\UIKit+AFNetworking\UIImageView+AFNetworking.m">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\UIKit+AFNetworking\UIWebView+AFNetworking.m">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\AFNetworking\AFSecurityPolicy.m">
+      <Filter>AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\UIKit+AFNetworking\UIButton+AFNetworking.m">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\AFNetworking\AFHTTPSessionManager.m">
+      <Filter>AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\AFNetworking\AFURLSessionManager.m">
+      <Filter>AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\AFNetworking\AFURLRequestSerialization.m">
+      <Filter>AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\UIKit+AFNetworking\AFAutoPurgingImageCache.m">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\UIKit+AFNetworking\UIActivityIndicatorView+AFNetworking.m">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\AFNetworking\AFURLResponseSerialization.m">
+      <Filter>AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\UIKit+AFNetworking\AFImageDownloader.m">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\UIKit+AFNetworking\AFNetworkActivityIndicatorManager.m">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClangCompile>
+  </ItemGroup>
+</Project>

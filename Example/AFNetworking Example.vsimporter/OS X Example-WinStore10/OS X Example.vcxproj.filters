@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{a4451690-6675-4127-a34f-3fc03f19400a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{8014c5cb-6bd1-469d-a739-69e7c4e3ef00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{48639F3D-ABC8-4FBB-9A12-61E824F45B2C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Models">
+      <UniqueIdentifier>{28934866-6031-415C-8E6F-603217494F67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Networking Extensions">
+      <UniqueIdentifier>{F92EE1FB-7C26-4539-BA71-12FA37B81DCB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OS X Example">
+      <UniqueIdentifier>{A065CA95-66D6-437F-8005-D55AAA5B6BF8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OS X Example\Supporting Files">
+      <UniqueIdentifier>{2327D1B6-00DA-4144-9055-127FDB57D522}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Xcode Variable Files">
+      <UniqueIdentifier>{E6399142-A683-4058-9319-A61DA6A4FA3E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <ClangCompile Include="..\..\Classes\Networking Extensions\AFAppDotNetAPIClient.m">
+      <Filter>Classes\Networking Extensions</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\OS X Example\AppDelegate.m">
+      <Filter>OS X Example</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\Classes\Models\User.m">
+      <Filter>Classes\Models</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\Classes\Models\Post.m">
+      <Filter>Classes\Models</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\OS X Example\main.m">
+      <Filter>OS X Example\Supporting Files</Filter>
+    </ClangCompile>
+    <AssetCatalogCompile Include="..\..\OS X Example\Assets.xcassets">
+      <Filter>OS X Example</Filter>
+    </AssetCatalogCompile>
+    <XibCompile Include="..\..\OS X Example\MainMenu.xib">
+      <Filter>OS X Example</Filter>
+    </XibCompile>
+    <SBInfoPlistCopy Include="..\..\OS X Example\Info.plist" />
+    <Text Include="OS X Example-Debug-xcvars.txt">
+      <Filter>Xcode Variable Files</Filter>
+    </Text>
+    <Text Include="OS X Example-Release-xcvars.txt">
+      <Filter>Xcode Variable Files</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

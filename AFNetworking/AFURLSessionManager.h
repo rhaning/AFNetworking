@@ -21,6 +21,8 @@
 
 
 #import <Foundation/Foundation.h>
+// IW_COMPAT
+#import "IWCompat.h"
 
 #import "AFURLResponseSerialization.h"
 #import "AFURLRequestSerialization.h"
@@ -132,22 +134,30 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  The data, upload, and download tasks currently run by the managed session.
  */
-@property (readonly, nonatomic, strong) NSArray <NSURLSessionTask *> *tasks;
+// IW_COMPAT
+//@property (readonly, nonatomic, strong) NSArray <NSURLSessionTask *> *tasks;
+@property (readonly, nonatomic, strong) NSArray *tasks;
 
 /**
  The data tasks currently run by the managed session.
  */
-@property (readonly, nonatomic, strong) NSArray <NSURLSessionDataTask *> *dataTasks;
+// IW_COMPAT
+//@property (readonly, nonatomic, strong) NSArray <NSURLSessionDataTask *> *dataTasks;
+@property (readonly, nonatomic, strong) NSArray *dataTasks;
 
 /**
  The upload tasks currently run by the managed session.
  */
-@property (readonly, nonatomic, strong) NSArray <NSURLSessionUploadTask *> *uploadTasks;
+ // IW_COMPAT
+//@property (readonly, nonatomic, strong) NSArray <NSURLSessionUploadTask *> *uploadTasks;
+@property (readonly, nonatomic, strong) NSArray *uploadTasks;
 
 /**
  The download tasks currently run by the managed session.
  */
-@property (readonly, nonatomic, strong) NSArray <NSURLSessionDownloadTask *> *downloadTasks;
+ // IW_COMPAT
+//@property (readonly, nonatomic, strong) NSArray <NSURLSessionDownloadTask *> *downloadTasks;
+@property (readonly, nonatomic, strong) NSArray *downloadTasks;
 
 ///-------------------------------
 /// @name Managing Callback Queues

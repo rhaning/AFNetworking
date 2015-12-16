@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="AFNetworking">
+      <UniqueIdentifier>{5AA5373D-3430-4E6B-8318-017ABEF173B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIKit+AFNetworking">
+      <UniqueIdentifier>{600A096C-41E3-4E64-8D3F-241B573233AE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClangCompile Include="..\..\AFNetworking\AFNetworkReachabilityManager.m">
+      <Filter>AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\AFNetworking\AFSecurityPolicy.m">
+      <Filter>AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\AFNetworking\AFHTTPSessionManager.m">
+      <Filter>AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\AFNetworking\AFURLSessionManager.m">
+      <Filter>AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\UIKit+AFNetworking\UIProgressView+AFNetworking.m">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\AFNetworking\AFURLRequestSerialization.m">
+      <Filter>AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\UIKit+AFNetworking\AFAutoPurgingImageCache.m">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\UIKit+AFNetworking\UIButton+AFNetworking.m">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\UIKit+AFNetworking\UIActivityIndicatorView+AFNetworking.m">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\AFNetworking\AFURLResponseSerialization.m">
+      <Filter>AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\UIKit+AFNetworking\UIImageView+AFNetworking.m">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\UIKit+AFNetworking\AFImageDownloader.m">
+      <Filter>UIKit+AFNetworking</Filter>
+    </ClangCompile>
+  </ItemGroup>
+</Project>

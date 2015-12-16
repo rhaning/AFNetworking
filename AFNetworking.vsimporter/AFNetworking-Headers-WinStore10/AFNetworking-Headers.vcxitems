@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsRootNamespace>AFNetworking_Headers</ItemsRootNamespace>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <ItemsProjectGuid>{C19964CF-B50B-47B7-96E8-4458CF9680A3}</ItemsProjectGuid>
+    <SharedGUID>{F26C9959-CF37-469F-AD29-B59C4BC4CF19}</SharedGUID>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\AFNetworking\AFHTTPSessionManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\AFNetworking\AFNetworkReachabilityManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\AFNetworking\AFSecurityPolicy.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\AFNetworking\AFURLRequestSerialization.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\AFNetworking\AFURLResponseSerialization.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\AFNetworking\AFURLSessionManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\UIKit+AFNetworking\AFAutoPurgingImageCache.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\UIKit+AFNetworking\AFImageDownloader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\UIKit+AFNetworking\AFNetworkActivityIndicatorManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\UIKit+AFNetworking\UIActivityIndicatorView+AFNetworking.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\UIKit+AFNetworking\UIButton+AFNetworking.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\UIKit+AFNetworking\UIImage+AFNetworking.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\UIKit+AFNetworking\UIImageView+AFNetworking.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\UIKit+AFNetworking\UIKit+AFNetworking.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\UIKit+AFNetworking\UIProgressView+AFNetworking.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\UIKit+AFNetworking\UIRefreshControl+AFNetworking.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\UIKit+AFNetworking\UIWebView+AFNetworking.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Framework\AFNetworking.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Tests\Tests\AFTestCase.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)AssertMacros.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+</Project>

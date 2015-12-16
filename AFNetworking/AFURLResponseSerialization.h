@@ -22,6 +22,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 
+#import "IWCompat.h"
 NS_ASSUME_NONNULL_BEGIN
 
 /**
@@ -81,7 +82,9 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  The acceptable MIME types for responses. When non-`nil`, responses with a `Content-Type` with MIME types that do not intersect with the set will result in an error during validation.
  */
-@property (nonatomic, copy, nullable) NSSet <NSString *> *acceptableContentTypes;
+// IW_COMPAT
+//@property (nonatomic, copy, nullable) NSSet <NSString *> *acceptableContentTypes;
+@property (nonatomic, copy, nullable) NSSet *acceptableContentTypes;
 
 /**
  Validates the specified response and data.
@@ -259,14 +262,19 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  The component response serializers.
  */
-@property (readonly, nonatomic, copy) NSArray <id<AFURLResponseSerialization>> *responseSerializers;
+
+// IW_COMPAT
+//@property (readonly, nonatomic, copy) NSArray <id<AFURLResponseSerialization>> *responseSerializers;
+@property (readonly, nonatomic, copy) NSArray  *responseSerializers;
 
 /**
  Creates and returns a compound serializer comprised of the specified response serializers.
 
  @warning Each response serializer specified must be a subclass of `AFHTTPResponseSerializer`, and response to `-validateResponse:data:error:`.
  */
-+ (instancetype)compoundSerializerWithResponseSerializers:(NSArray <id<AFURLResponseSerialization>> *)responseSerializers;
+// IW_COMPAT
+//+ (instancetype)compoundSerializerWithResponseSerializers:(NSArray <id<AFURLResponseSerialization>> *)responseSerializers;
++(instancetype)compoundSerializerWithResponseSerializers:(NSArray *)responseSerializers;
 
 @end
 
